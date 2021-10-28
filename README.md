@@ -29,3 +29,16 @@
 
 The above snippet with install git, initialize your project with a git repo, add a ```.gitignore``` file to the project, and add all your existing files to git.  It's important that you not commit secrets to git, because you might push your repo to github.com or another
 external site.  If you're using a file like 'secrets.yaml', add that file pattern to the ```.gitignore``` file.
+
+Now, once you make a few changes to your project you can:
+```
+% git add <select the files to add to the next commit, or their directories>
+% git commit  <this will prompt you for a commit message>
+```
+Some useful commands to learn are:
+```
+% git status  <show what files have changed>
+% git diff    <show the changes>
+```
+
+
