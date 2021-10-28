@@ -51,7 +51,7 @@ being placed on your Raspberry Pi, with all of the change history.
 % cd <a new directory, not underneath the project above>
 
 look at the github UI and click on the CODE tab and then click on the 
-GREEN Code button.   Copy the SSH URL that starts with ```git@```.
+GREEN Code button.   Copy the SSH URL that starts with "git@".
 
 % git clone <paste the URL>
 
