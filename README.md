@@ -1,8 +1,31 @@
 ### forSteve
 
+#### Getting going with Python
+
 1. How to install ```python3``` 
 ```
-% 
+% sudo apt install python3.9
 ```
-3. How to install python3 packages
-4. 
+2. How to install python3 packages
+```
+% sudo apt install pip3
+...
+% vi requirements.txt
+<add all the required python packages to the file, one per line>
+
+% sudo pip install -r requirements.txt
+```
+#### Getting going with Git
+
+```
+% sudo apt install git
+% cd <top level directory of your project>
+% git init
+% vi .gitignore
+<take a look at https://github.com/github/gitignore/blob/master/Python.gitignore >
+% git add .
+% git commit -m "initial commit"
+```
+
+The above snippet with install git, initialize your project with a git repo, add a ```.gitignore``` file to the project, and add all your existing files to git.  It's important that you not commit secrets to git, because you might push your repo to github.com or another
+external site.  If you're using a file like 'secrets.yaml', add that file pattern to the ```.gitignore``` file.
