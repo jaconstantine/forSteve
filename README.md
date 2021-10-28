@@ -40,4 +40,4 @@ Some useful commands to learn are:
 % git status  <show what files have changed>
 % git diff    <show the changes>
 ```
-Repeate as needed.
+Repeat as needed.
