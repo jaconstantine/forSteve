@@ -41,3 +41,18 @@ Some useful commands to learn are:
 % git diff    <show the changes>
 ```
 Repeat as needed.
+
+#### Cloning a Repo
+
+Here's how to clone a repo.  This will result a copy of this repo
+being placed on your Raspberry Pi, with all of the change history.
+
+```
+% cd <a new directory, not underneath the project above>
+
+look at the github UI and click on the Fork button and use it to copy the git:// URL
+
+% git clone <paste the URL>
+
+done!
+```
