@@ -42,7 +42,46 @@ Some useful commands to learn are:
 ```
 Repeat as needed.
 
-#### Cloning a Repo
+#### Reading a YAML file
+
+Here's how you read a YAML file.  First a sample YAML file. Let's call this ```secrets.yaml```.
+
+```yaml
+secrets:
+   user: "aUser"
+   password: "passWord"
+```
+
+Requirements
+
+Add "pyyaml" to your ```requirements.txt``` and run ```% pip3 install -r requirements.txt```
+
+Code
+
+```
+import yaml
+
+with open(r'secrets.yaml') as file:
+    # The FullLoader parameter handles the conversion from YAML
+    # scalar values to Python the dictionary format
+    contents = yaml.load(file, Loader=yaml.FullLoader)
+    print(f"the secrets are: {contents['secrets']}\n")
+
+# secrets is now a dictionary with two key/value pairs
+
+print(f"The user is \'{contents['secrets']['user']}\'\n")
+```
+
+Which produces:
+
+```
+% python3 main.py 
+the secrets are: {'user': 'aUser', 'password': 'passWord'}
+
+The user is 'aUser'
+```
+
+#### Cloning this Repo
 
 Here's how to clone a repo.  This will result a copy of this repo
 being placed on your Raspberry Pi, with all of the change history.
